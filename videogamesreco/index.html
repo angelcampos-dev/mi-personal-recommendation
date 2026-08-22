@@ -3,11 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi recomendacion video games 🎮</title>
+    <title>Mi recomendacion persola |video games 🎮</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Se recomendara diversos juegos segun el gusto de cada jugador🎮</h1>
-    <h2>Primera recomendacion:</h2>
-    <h3>battlefield</h3>
+    <header>
+        
+        <!-- 
+          La etiqueta 'nav' define el bloque de navegación.
+          Clases de Bootstrap utilizadas:
+          - 'navbar': Identifica este elemento como una barra de navegación.
+          - 'navbar-expand-lg': Hace que el menú se vea completo en pantallas grandes y se colapse (icono de hamburguesa) en pantallas móviles.
+          - 'bg-light': Aplica un fondo gris claro por defecto.
+          - 'border-bottom': Agrega una línea sutil en la parte inferior para separar el menú del contenido.
+        -->
+        <nav class="navbar navbar-expand-lg bg-light border-bottom">
+            
+            <!-- 'container-fluid' permite que el contenido del menú ocupe todo el ancho disponible de forma fluida -->
+            <div class="container-fluid">
+                
+                <!-- 
+                  'navbar-brand' se usa específicamente para el logotipo o nombre principal del sitio.
+                  Aquí plasmamos el nombre solicitado: "Mi recomendación personal".
+                -->
+                <a class="navbar-brand fw-bold" href="#">Mi recomendación personal</a>
+                
+                <!-- 
+                  Este botón representa el "menú de hamburguesa". 
+                  Solo se mostrará en pantallas pequeñas (móviles) para ocultar o mostrar los enlaces.
+                -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- 
+                  Este contenedor 'collapse navbar-collapse' agrupa los enlaces de navegación.
+                  En pantallas móviles se ocultará automáticamente dentro del botón anterior.
+                -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <!-- 'navbar-nav' es la lista (ul) que contiene los elementos del menú -->
+                    <ul class="navbar-nav text-center">
+                        
+                        <!-- Elemento de lista (li) para el enlace "Inicio" -->
+                        <li class="nav-item">
+                            <!-- 'nav-link' da el formato correcto de enlace de Bootstrap. 'active' resalta que es la página actual -->
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        
+                        <!-- Elemento de lista para el enlace "Recomendaciones" -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recomendaciones</a> <!-- href="#" lo bamos a enlasar despues-->
+                        </li>
+                        
+                        <!-- Elemento de lista para el enlace "Mi favorito" -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mis favoritos</a> <!-- href="#" lo bamos a enlasar despues-->
+                        </li>
+                        
+                        <!-- Elemento de lista para el enlace "Contacto" -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">explora mas</a> <!-- href="#" lo bamos a enlasar despues-->
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        
+    </header>
+    <!-- 
+      Usamos 'section' para separar este bloque del resto de la página.
+      Clases de Bootstrap:
+      - 'container': Centra el contenido y le da márgenes a los lados.
+      - 'py-5': Añade relleno (padding) vertical arriba y abajo para que no quede amontonado.
+      - 'text-center': Centra todo el texto y elementos que estén dentro.
+    -->
+    <section class="container py-5 text-center">
+        
+        <!-- 
+          Etiqueta <h1>: El título más importante de toda la página (Jerarquía Máxima).
+          - 'display-4': Clase de Bootstrap que aumenta el tamaño de la fuente para títulos principales.
+          - 'mb-3': Añade un margen abajo (margin-bottom) para separarlo del párrafo.
+        -->
+        <h1 class="display-4 mb-3 fw-bold">Mis videojuegos recomendados</h1>
+        
+        <!-- 
+          Etiqueta <p>: Párrafo de presentación.
+          - 'lead': Hace que el texto sea un poco más grande y estilizado, ideal para introducciones.
+          - 'mb-4': Añade un margen abajo para separarlo de la imagen.
+        -->
+        <p class="lead text-muted mb-4">
+            ¡Bienvenido a mi rincón gamer! Aquí encontrarás una selección honesta y detallada de los títulos que han marcado mi experiencia como jugador. Desde mundos abiertos fascinantes hasta mecánicas independientes que te atraparán por horas.
+        </p>
+        
+        <!-- 
+          Etiqueta <img>: Imagen decorativa opcional.
+          - 'src': Ruta de la imagen (usamos un servicio temporal que genera una silueta de control de videojuegos).
+          - 'img-fluid': Hace que la imagen sea responsiva (se encoge automáticamente en celulares).
+          - 'rounded': Redondea las esquinas de la imagen para un acabado más moderno.
+          - 'mb-4': Añade margen abajo para separarlo del botón.
+        -->
+        <div class="mb-4">
+            <img src="https://unsplash.com" alt="Control de videojuegos decorativo" class="img-fluid rounded shadow-sm" style="max-height: 350px; object-fit: cover; width: 100%;">
+        </div>
+        
+        <!-- 
+          Etiqueta <a>: Enlace con aspecto de botón.
+          - 'href="#recomendaciones"': Apunta al ID de la siguiente sección (cuando la crees, usará <section id="recomendaciones">).
+          - 'btn btn-primary': Clases de Bootstrap que transforman el enlace en un botón azul llamativo.
+          - 'btn-lg': Hace que el botón sea grande, ideal para un llamado a la acción (Call to Action).
+        -->
+        <a href="#recomendaciones" class="btn btn-primary btn-lg">Ver recomendaciones</a>
+        
+    </section>
+
+    <!-- 
+      Nota de jerarquía futura: 
+      Cuando crees la siguiente sección, su título principal deberá ser un <h2> (ej. <h2>Lista de Juegos</h2>).
+      Y cada juego individual dentro de ella llevará un <h3> (ej. <h3>The Legend of Zelda</h3>).
+    -->
+     <!-- 
+      Agregamos el id="recomendaciones" para que los enlaces anteriores apunten directamente aquí.
+      'bg-light' le da un fondo ligeramente gris para diferenciarlo de la sección blanca de arriba.
+    -->
+    <section id="recomendaciones" class="bg-light py-5">
+        <div class="container">
+            
+            <!-- Título principal de la sección (Jerarquía H2) -->
+            <h2 class="text-center mb-5 fw-bold">Juegos que recomiendo</h2>
+            
+            <!-- 
+              Contenedor 'row' (Fila): Activa el sistema de rejilla de Bootstrap 
+              para que podamos poner tarjetas alineadas.
+            -->
+            <div class="row g-4">
+                
+                <!-- ----------------------------------------- -->
+                <!-- VIDEOJUEGO 1: ESCRITO MANUALMENTE        -->
+                <!-- ----------------------------------------- -->
+                <!-- 'col-md-4' significa: ocupa 4 de 12 columnas en pantallas medianas/grandes (3 tarjetas por fila) -->
+                <article class="col-md-4">
+                    <!-- La clase 'card' dibuja la caja con bordes y fondo blanco. 'h-100' hace que todas midan lo mismo de alto -->
+                    <div class="card h-100 shadow-sm">
+                        <!-- Imagen del juego: 'card-img-top' la ajusta perfectamente a la parte superior de la tarjeta -->
+                        <img src="https://unsplash.com" class="card-img-top" alt="Imagen de Videojuego 1">
+                        
+                        <!-- Contenedor del texto interno -->
+                        <div class="card-body">
+                            <!-- Título del juego (Jerarquía H3) -->
+                            <h3 class="card-title h5 fw-bold">The Witcher 3: Wild Hunt</h3>
+                            
+                            <!-- Información breve -->
+                            <p class="card-text text-muted small mb-2"><strong>Género:</strong> RPG de Acción / Mundo Abierto</p>
+                            
+                            <!-- Puntuación personalizada -->
+                            <p class="card-text mb-2">
+                                <strong>Puntuación:</strong> 
+                                <span class="text-warning">★ ★ ★ ★ ★</span> (10/10)
+                            </p>
+                            
+                            <!-- Recomendación personal -->
+                            <p class="card-text">
+                                <strong>Mi opinión:</strong> Una obra maestra narrativa. Sus misiones secundarias son tan profundas como la historia principal. El mundo se siente vivo y cada decisión que tomas altera el destino de los personajes.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ----------------------------------------- -->
+                <!-- VIDEOJUEGO 2:      -->
+                <!-- ----------------------------------------- -->
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top" alt="Imagen de Videojuego 2">
+                        
+                        <div class="card-body">
+                            <!-- Título del juego (Jerarquía H3) -->
+                            <h3 class="card-title h5 fw-bold">Hollow Knight</h3>
+                            
+                            <p class="card-text text-muted small mb-2"><strong>Género:</strong> Metroidvania / Indie</p>
+                            
+                            <p class="card-text mb-2">
+                                <strong>Puntuación:</strong> 
+                                <span class="text-warning">★ ★ ★ ★ ★</span> (9.5/10)
+                            </p>
+                            
+                            <p class="card-text">
+                                <strong>Mi opinión:</strong> Arte visual hermoso, banda sonora espectacular y un control sumamente preciso. Aunque es un juego bastante desafiante, explorar Hallownest y descubrir sus secretos es sumamente satisfactorio.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ----------------------------------------- -->
+                <!-- VIDEOJUEGO 3:     -->
+                <!-- ----------------------------------------- -->
+                <article class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://unsplash.com" class="card-img-top" alt="Imagen de Videojuego 3">
+                        
+                        <div class="card-body">
+                            <!-- Título del juego (Jerarquía H3) -->
+                            <h3 class="card-title h5 fw-bold">Outer Wilds</h3>
+                            
+                            <p class="card-text text-muted small mb-2"><strong>Género:</strong> Exploración / Misterio</p>
+                            
+                            <p class="card-text mb-2">
+                                <strong>Puntuación:</strong> 
+                                <span class="text-warning">★ ★ ★ ★ ★</span> (10/10)
+                            </p>
+                            
+                            <p class="card-text">
+                                <strong>Mi opinión:</strong> Un videojuego único donde tu única progresión es el conocimiento que adquieres. Resolver el misterio de este sistema solar atrapado en un bucle temporal es una de las mejores experiencias que he tenido.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </div> <!-- Cierre de la fila (row) -->
+        </div> <!-- Cierre del contenedor -->
+    </section>
+    <!-- ========================================== -->
+    <!-- PARTE D: SECCIÓN JUEGO FAVORITO            -->
+    <!-- ========================================== -->
+    
+    <!-- Identificamos la sección con el ID solicitado -->
+    <section id="favorito" class="py-5">
+        <div class="container">
+            
+            <!-- Título principal de la sección (Jerarquía H2) -->
+            <h2 class="text-center mb-5 fw-bold">Mi videojuego favorito</h2>
+            
+            <!-- Creamos una fila para partir la pantalla en dos columnas -->
+            <div class="row align-items-center">
+                
+                <!-- Columna Izquierda: Ocupa la mitad del ancho (6 de 12 columnas) -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- Título del juego (Jerarquía H3) -->
+                    <h3 class="display-6 fw-bold text-primary">The Legend of Zelda: Breath of the Wild</h3>
+                    
+                    <!-- Información breve del juego -->
+                    <p class="text-muted small"><strong>Plataforma:</strong> Nintendo Switch | <strong>Año:</strong> 2017</p>
+                    
+                    <!-- Tu recomendación personal -->
+                    <p>
+                        Este juego redefinió por completo el concepto de mundo abierto. Lo que más me fascina es la absoluta libertad que te otorga desde el primer minuto; no hay barreras invisibles ni un orden estricto para cumplir las misiones.
+                    </p>
+                    <p>
+                        Su sistema de físicas e interacciones con la naturaleza hace que cada solución a un problema dependa completamente de tu creatividad. Una verdadera obra maestra.
+                    </p>
+                </div>
+                
+                <!-- Columna Derecha: Ocupa la otra mitad del ancho para la imagen -->
+                <div class="col-md-6">
+                    <!-- 'img-fluid' hace que la imagen no se desborde y 'shadow' le da una sombra elegante -->
+                    <img src="https://unsplash.com" alt="Control y juego de aventura" class="img-fluid rounded shadow">
+                </div>
+                
+            </div> <!-- Cierre de la fila -->
+            
+        </div> <!-- Cierre del contenedor -->
+    </section>
+
+
+
+    <!-- ========================================== -->
+    <!-- PARTE E: PIE DE PÁGINA (FOOTER)            -->
+    <!-- ========================================== -->
+    
+    <!-- 
+      'bg-dark' pinta el fondo gris oscuro, 'text-light' hace las letras blancas, 
+      'py-4' da espacio interno vertical y 'mt-5' separa el footer de la sección de arriba.
+    -->
+    
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            
+            <!-- Tu nombre o alias junto con el año actual (el código &copy; dibuja el símbolo de copyright ©) -->
+            <p class="mb-1">&copy; 2026 - **Mike**</p>
+            
+            <!-- Frase informativa solicitada de tu práctica -->
+            <p class="small text-muted mb-0">Sitio creado como proyecto de práctica.</p>
+            
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
