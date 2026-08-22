@@ -1,31 +1,30 @@
 /* Estilos generales */
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #a1a0ef; /*modifica el color en la introduccion*/
+    color: #010101; /*color para el texto de mi vidiojuego fav*/
     font-family: Arial, sans-serif;
 }
 
 /* Barra de navegación */
 .navbar {
-    background-color: #1f2937 !important;
-    padding: 15px;
+    background-color: #609ef5 !important; /**color de la barra de navegacion*/
+    padding: 20px; /**espacio interno en nav.*/
 }
 
 .navbar-brand,
 .navbar .nav-link {
-    color: white !important;
+    color: rgb(12, 12, 12) !important; /*color de letra dentro de van(barra de navegacion)*/
+}
+.navbar .nav-link:hover {
+    color: #edbf06 !important; /**cuando pasas el cursor es el color*/
 }
 
-/* Hover en los enlaces del menú */
-.navbar .nav-link:hover {
-    color: #facc15 !important;
-}
 
 /* Títulos */
 h1,
 h2,
 h3 {
-    color: #1e3a8a;
+    color: #070707;
 }
 
 /* Imagen principal */
@@ -35,7 +34,7 @@ section img {
 
 /* Botón principal */
 .btn-primary {
-    background-color: #2563eb;
+    background-color: #010714; /*color al boton "ver recomendacion"*/
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -43,13 +42,13 @@ section img {
 
 /* Hover del botón */
 .btn-primary:hover {
-    background-color: #1d4ed8;
+    background-color: #e10e20; /*color al desplazar el puntero*/
     transform: scale(1.05);
 }
 
 /* Sección de recomendaciones */
 #recomendaciones {
-    background-color: #e5e7eb !important;
+    background-color: #7550fc !important; /** color de fonfo de juegos recomendados*/
 }
 
 /* Tarjetas de videojuegos */
@@ -73,7 +72,7 @@ section img {
 
 /* Títulos dentro de tarjetas */
 .card-title {
-    color: #1e3a8a;
+    color: #4b09a8; /*colores de los titulos dentro de las tarjetas*/
 }
 
 /* Imagen del juego favorito */
@@ -82,7 +81,8 @@ section img {
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: #1f2937 !important;
     color: white;
+    
 }

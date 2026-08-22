@@ -8,3 +8,7 @@ let puntuacionFavorita = 10;
 
 // Variable verdadera o falsa (boolean)
 let paginaActiva = true;
+
+//En JavaScript, la palabra clave let se utiliza para declarar variables.
+//  Una variable es un contenedor con nombre donde puedes almacenar datos que pueden cambiar durante 
+// la ejecución de tu programa.
