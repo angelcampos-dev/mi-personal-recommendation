@@ -1,5 +1,10 @@
-const juegoFavorito = "Hollow Knight";
-const puntuacion = 9;
-let mensaje = "Mi juego favorito es: " + juegoFavorito;
-console.log(mensaje);
-console.log("Puntuación personal: " + puntuacion + "/10");
+// Variables de texto (string)
+let nombrePagina = "Mi recomendación personal";
+let juegoFavorito = "Battlefield";
+
+// Variables numéricas (number)
+let cantidadRecomendaciones = 3;
+let puntuacionFavorita = 10;
+
+// Variable verdadera o falsa (boolean)
+let paginaActiva = true;
