@@ -18,9 +18,9 @@ Este proyecto fue construido utilizando el siguiente ecosistema técnico:
 ## 📦 Proceso con la IA
 
 1.-prmpt: puedes construir “Mi recomendación personal” como un sitio de una sola página, con recomendaciones de videojuegos presentadas en tarjetas. Como aún no usas funciones, ciclos ni el DOM, prepararemos primero una versión **estática y visualmente completa**; JavaScript servirá únicamente para practicar variables y ver datos en la consola.
-2 .- prompt:
-3.- prompt:
-4.- prompt:
+2.-prompt:
+3.-prompt:
+4.-prompt:
 
 
 ## 🚀 Codigo generado con IA vs codigo propio
