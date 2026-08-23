@@ -12,7 +12,6 @@
 Este proyecto fue construido utilizando el siguiente ecosistema técnico:
 
 *   **Frontend:** [HTML, CSS, js, Bootstrap]
-*   **Backend:** [Python]
 *   **Herramientas:** [Git, GitHub ]
 *   **IA:** [perplexity y Gemini]
 
